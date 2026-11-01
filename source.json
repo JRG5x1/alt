@@ -38,12 +38,12 @@
       ],
       "versions": [
         {
-          "version": "1.0",
-          "buildVersion": "1",
+          "version": "1.1",
+          "buildVersion": "2",
           "date": "2026-11-01",
           "localizedDescription": "• Save Jibo's new photos to your iPhone\n• Get a notification when Jibo's battery is low\n• Use your iPhone's calendar for someone's personal report\n\nSwitch them on for each robot in More › Settings › On this iPhone.",
           "downloadURL": "https://alt.5x1.com/apps/BEep-1.1.ipa",
-          "size": 849143,
+          "size": 849142,
           "minOSVersion": "16.0"
         },
         {
@@ -66,11 +66,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.0",
+      "version": "1.1",
       "versionDate": "2026-11-01",
       "versionDescription": "• Save Jibo's new photos to your iPhone\n• Get a notification when Jibo's battery is low\n• Use your iPhone's calendar for someone's personal report\n\nSwitch them on for each robot in More › Settings › On this iPhone.",
       "downloadURL": "https://alt.5x1.com/apps/BEep-1.1.ipa",
-      "size": 849143
+      "size": 849142
     }
   ],
   "news": []
