@@ -43,6 +43,15 @@
       ],
       "versions": [
         {
+          "version": "1.3.2",
+          "buildVersion": "6",
+          "date": "2026-11-01",
+          "localizedDescription": "• Removes the Music tab, since Jibo's Jukebox is gone. Jibo's Music player and AirPlay replace it",
+          "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.2.ipa",
+          "size": 1028870,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.3.1",
           "buildVersion": "5",
           "date": "2026-11-01",
@@ -100,11 +109,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.3.1",
+      "version": "1.3.2",
       "versionDate": "2026-11-01",
-      "versionDescription": "• Fixes the battery widget's Jibo list being empty after updating from an earlier BEep",
-      "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.1.ipa",
-      "size": 1028915
+      "versionDescription": "• Removes the Music tab, since Jibo's Jukebox is gone. Jibo's Music player and AirPlay replace it",
+      "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.2.ipa",
+      "size": 1028870
     }
   ],
   "news": []
