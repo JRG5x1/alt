@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5x1 apps · AltStore source</title>
+<link rel="icon" href="images/logo.svg" type="image/svg+xml">
+<style>
+  :root { --bg: #111513; --panel: #161c18; --line: #303b33; --text: #eef1ec; --muted: #b0bbb2; --green: #29d780; }
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at top, #1c3023 0%, var(--bg) 60%); color: var(--text);
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: grid; place-items: center; padding: 32px 20px; }
+  main { width: 100%; max-width: 520px; text-align: center; }
+  .logo { width: 96px; height: 96px; }
+  h1 { margin: 8px 0 4px; font-size: 32px; }
+  p { color: var(--muted); margin: 0 0 24px; }
+  .app { display: flex; gap: 16px; align-items: center; text-align: left; background: var(--panel); border: 1px solid var(--line);
+         border-radius: 20px; padding: 16px; margin-bottom: 20px; }
+  .app img { width: 64px; height: 64px; border-radius: 15px; }
+  .app h2 { margin: 0; font-size: 18px; }
+  .app p { margin: 0; font-size: 14px; }
+  .button { display: block; background: var(--green); color: #0d2015; border-radius: 14px; padding: 14px 20px; margin: 10px 0;
+            font-weight: 650; text-decoration: none; }
+  .button.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  code { display: block; margin-top: 18px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted);
+         font: 13px ui-monospace, SFMono-Regular, Consolas, monospace; word-break: break-all; user-select: all; }
+  footer { margin-top: 28px; font-size: 13px; color: var(--muted); }
+  a { color: var(--green); }
+</style>
+</head>
+<body>
+<main>
+  <img class="logo" src="images/logo.svg" alt="5x1">
+  <h1>5x1 apps</h1>
+  <p>Apps for revived Jibo robots, installed with AltStore or SideStore.</p>
+
+  <div class="app">
+    <img src="images/beep-icon.png" alt="">
+    <div>
+      <h2>BEep</h2>
+      <p>Your Jibo, in your pocket. Finds Jibo on your Wi-Fi and opens BEacon.</p>
+    </div>
+  </div>
+
+  <a class="button" href="altstore://source?url=https://alt.5x1.com/source.json">Add to AltStore</a>
+  <a class="button secondary" href="sidestore://source?url=https://alt.5x1.com/source.json">Add to SideStore</a>
+  <a class="button secondary" href="apps/BEep-1.0.ipa">Download BEep.ipa</a>
+
+  <code>https://alt.5x1.com/source.json</code>
+
+  <footer>Made by <a href="https://5x1.com">5x1</a></footer>
+</main>
+</body>
+</html>
