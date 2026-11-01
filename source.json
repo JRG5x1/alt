@@ -6,22 +6,46 @@
   "iconURL": "https://alt.5x1.com/images/beep-icon.png",
   "website": "https://5x1.com",
   "tintColor": "#29D780",
-  "featuredApps": ["com.jiborevival.beep"],
+  "featuredApps": [
+    "com.jiborevival.beep"
+  ],
   "apps": [
     {
       "name": "BEep",
       "bundleIdentifier": "com.jiborevival.beep",
       "developerName": "5x1",
       "subtitle": "Your Jibo, in your pocket.",
-      "localizedDescription": "BEep finds your Jibo on your Wi-Fi and opens BEacon, his control panel, with the iOS 26 Liquid Glass design.\n\n• Finds every Jibo on your Wi-Fi by itself and remembers them\n• Status, Screen, Music, Photos, People, Store, Server and Settings\n• Save Jibo's photos to your library and upload from your phone\n• Add a robot by IP address if it isn't found\n\nJibo needs BEam with BEacon.",
+      "localizedDescription": "BEep finds your Jibo on your Wi-Fi and opens BEacon, his control panel, with the iOS 26 Liquid Glass design.\n\n• Finds every Jibo on your Wi-Fi by itself and remembers them\n• Status, Screen, Music, Photos, People, Store, Server and Settings\n• Save Jibo's photos to your library and upload from your phone\n• Save Jibo's photos automatically, low-battery alerts, and your iPhone calendar for personal reports\n• Add a robot by IP address if it isn't found\n\nJibo needs BEam with BEacon.",
       "iconURL": "https://alt.5x1.com/images/beep-icon.png",
       "tintColor": "#29D780",
       "category": "utilities",
       "screenshots": [
-        { "imageURL": "https://alt.5x1.com/images/beep-home.png", "width": 603, "height": 1311 },
-        { "imageURL": "https://alt.5x1.com/images/beep-robot.png", "width": 603, "height": 1311 }
+        {
+          "imageURL": "https://alt.5x1.com/images/beep-home.png",
+          "width": 603,
+          "height": 1311
+        },
+        {
+          "imageURL": "https://alt.5x1.com/images/beep-robot.png",
+          "width": 603,
+          "height": 1311
+        },
+        {
+          "imageURL": "https://alt.5x1.com/images/beep-settings.png",
+          "width": 603,
+          "height": 1311
+        }
       ],
       "versions": [
+        {
+          "version": "1.0",
+          "buildVersion": "1",
+          "date": "2026-11-01",
+          "localizedDescription": "• Save Jibo's new photos to your iPhone\n• Get a notification when Jibo's battery is low\n• Use your iPhone's calendar for someone's personal report\n\nSwitch them on for each robot in More › Settings › On this iPhone.",
+          "downloadURL": "https://alt.5x1.com/apps/BEep-1.1.ipa",
+          "size": 849143,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.0",
           "buildVersion": "1",
@@ -35,16 +59,18 @@
       "appPermissions": {
         "entitlements": [],
         "privacy": {
-          "NSLocalNetworkUsageDescription": "BEep looks for Jibo on your Wi-Fi and talks to it there.",
+          "NSCalendarsFullAccessUsageDescription": "Send your calendar to Jibo for your personal report.",
+          "NSCalendarsUsageDescription": "Send your calendar to Jibo for your personal report.",
           "NSCameraUsageDescription": "Take a photo to upload to Jibo.",
+          "NSLocalNetworkUsageDescription": "BEep looks for Jibo on your Wi-Fi and talks to it there.",
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
       "version": "1.0",
       "versionDate": "2026-11-01",
-      "versionDescription": "First release.",
-      "downloadURL": "https://alt.5x1.com/apps/BEep-1.0.ipa",
-      "size": 791861
+      "versionDescription": "• Save Jibo's new photos to your iPhone\n• Get a notification when Jibo's battery is low\n• Use your iPhone's calendar for someone's personal report\n\nSwitch them on for each robot in More › Settings › On this iPhone.",
+      "downloadURL": "https://alt.5x1.com/apps/BEep-1.1.ipa",
+      "size": 849143
     }
   ],
   "news": []
