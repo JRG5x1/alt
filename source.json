@@ -43,6 +43,15 @@
       ],
       "versions": [
         {
+          "version": "1.5",
+          "buildVersion": "9",
+          "date": "2026-11-02",
+          "localizedDescription": "• Liquid Glass throughout BEacon, all in 5x1 green\n• The tab bar's selection is a sliding glass bubble you can drag\n• Store is in the tab bar, with a Details button and popup; More has Server and Settings\n• The home screen no longer scrolls when everything fits",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.5.ipa",
+          "size": 5024578,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4.1",
           "buildVersion": "8",
           "date": "2026-11-02",
@@ -127,11 +136,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.4.1",
+      "version": "1.5",
       "versionDate": "2026-11-02",
-      "versionDescription": "• Convert a Jibo to 5x1 now only asks for his IP address",
-      "downloadURL": "https://apps.5x1.com/apps/BEep-1.4.1.ipa",
-      "size": 5006889
+      "versionDescription": "• Liquid Glass throughout BEacon, all in 5x1 green\n• The tab bar's selection is a sliding glass bubble you can drag\n• Store is in the tab bar, with a Details button and popup; More has Server and Settings\n• The home screen no longer scrolls when everything fits",
+      "downloadURL": "https://apps.5x1.com/apps/BEep-1.5.ipa",
+      "size": 5024578
     },
     {
       "name": "BEep BETA",

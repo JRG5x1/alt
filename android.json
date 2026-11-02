@@ -1,10 +1,10 @@
 {
   "stable": {
-    "version": "1.4.1",
+    "version": "1.5",
     "date": "2026-11-02",
-    "notes": "First Android version: find Jibo on your Wi-Fi, BEacon, and Convert a Jibo to 5x1",
-    "downloadURL": "https://apps.5x1.com/apps/BEep-1.4.1.apk",
-    "size": 1211744
+    "notes": "• A proper app icon that fills your launcher's icon shape, instead of a dark square on a white bubble",
+    "downloadURL": "https://apps.5x1.com/apps/BEep-1.5.apk",
+    "size": 1203404
   },
   "betaVersions": [
     {
