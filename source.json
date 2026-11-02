@@ -43,6 +43,15 @@
       ],
       "versions": [
         {
+          "version": "1.4.1",
+          "buildVersion": "8",
+          "date": "2026-11-02",
+          "localizedDescription": "• Convert a Jibo to 5x1 now only asks for his IP address",
+          "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.1.ipa",
+          "size": 5006889,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.4",
           "buildVersion": "7",
           "date": "2026-11-02",
@@ -118,11 +127,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.4",
+      "version": "1.4.1",
       "versionDate": "2026-11-02",
-      "versionDescription": "• Convert a Jibo to 5x1: enter a modded Jibo's IP address and BEep installs 5x1 on him over SSH, showing its progress",
-      "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.ipa",
-      "size": 5008994
+      "versionDescription": "• Convert a Jibo to 5x1 now only asks for his IP address",
+      "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.1.ipa",
+      "size": 5006889
     }
   ],
   "news": []
