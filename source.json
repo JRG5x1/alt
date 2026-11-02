@@ -178,10 +178,19 @@
       },
       "version": "1.4.1",
       "versionDate": "2026-11-02",
-      "versionDescription": "• First BEep BETA: the newest BEep, published with every change. Installs next to BEep",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-32/BEep-BETA-1.4.1-32.ipa",
-      "size": 4918838,
+      "versionDescription": "• Liquid Glass through BEacon: cards, settings, Store, menus and dialogs are glass over soft green glows\n• Everything is green, including the Store\n• The tab bar's selection is a glass bubble that slides between tabs and follows your finger",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-33/BEep-BETA-1.4.1-33.ipa",
+      "size": 4933396,
       "versions": [
+        {
+          "version": "1.4.1",
+          "buildVersion": "33",
+          "date": "2026-11-02",
+          "localizedDescription": "• Liquid Glass through BEacon: cards, settings, Store, menus and dialogs are glass over soft green glows\n• Everything is green, including the Store\n• The tab bar's selection is a glass bubble that slides between tabs and follows your finger",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-33/BEep-BETA-1.4.1-33.ipa",
+          "size": 4933396,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.4.1",
           "buildVersion": "32",
