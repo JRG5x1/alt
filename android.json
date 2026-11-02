@@ -9,6 +9,14 @@
   "betaVersions": [
     {
       "version": "1.4.1",
+      "buildVersion": "7",
+      "date": "2026-11-02",
+      "notes": "• The app icon fills your launcher's icon shape, instead of a dark square on a white bubble",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-7/BEep-BETA-1.4.1-7.apk",
+      "size": 1203744
+    },
+    {
+      "version": "1.4.1",
       "buildVersion": "4",
       "date": "2026-11-02",
       "notes": "First Android BETA",
@@ -18,10 +26,10 @@
   ],
   "beta": {
     "version": "1.4.1",
-    "buildVersion": "4",
+    "buildVersion": "7",
     "date": "2026-11-02",
-    "notes": "First Android BETA",
-    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-4/BEep-BETA-1.4.1-4.apk",
-    "size": 1211616
+    "notes": "• The app icon fills your launcher's icon shape, instead of a dark square on a white bubble",
+    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-7/BEep-BETA-1.4.1-7.apk",
+    "size": 1203744
   }
 }
