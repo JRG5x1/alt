@@ -3,7 +3,7 @@
   "identifier": "com.5x1.altsource",
   "subtitle": "Apps for revived Jibo robots",
   "description": "Apps from 5x1, the free public server for Jibo. Your phone needs to be on the same Wi-Fi as your Jibo.",
-  "iconURL": "https://alt.5x1.com/images/beep-icon.png",
+  "iconURL": "https://apps.5x1.com/images/beep-icon.png",
   "website": "https://5x1.com",
   "tintColor": "#29D780",
   "featuredApps": [
@@ -16,27 +16,27 @@
       "developerName": "5x1",
       "subtitle": "Your Jibo, in your pocket.",
       "localizedDescription": "BEep finds your Jibo on your Wi-Fi and opens BEacon, his control panel, with the iOS 26 Liquid Glass design.\n\n• Finds every Jibo on your Wi-Fi by itself and remembers them\n• Status, Screen, Music, Photos, People, Store, Server and Settings\n• Save Jibo's photos to your library and upload from your phone\n• Save Jibo's photos automatically, low-battery alerts, and your iPhone calendar for personal reports\n• Battery widget for your Home Screen and Lock Screen\n• Add a robot by IP address if it isn't found\n\nJibo needs BEam with BEacon.",
-      "iconURL": "https://alt.5x1.com/images/beep-icon.png",
+      "iconURL": "https://apps.5x1.com/images/beep-icon.png",
       "tintColor": "#29D780",
       "category": "utilities",
       "screenshots": [
         {
-          "imageURL": "https://alt.5x1.com/images/beep-home.png",
+          "imageURL": "https://apps.5x1.com/images/beep-home.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-robot.png",
+          "imageURL": "https://apps.5x1.com/images/beep-robot.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-settings.png",
+          "imageURL": "https://apps.5x1.com/images/beep-settings.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-widget.png",
+          "imageURL": "https://apps.5x1.com/images/beep-widget.png",
           "width": 603,
           "height": 1311
         }
@@ -47,7 +47,7 @@
           "buildVersion": "8",
           "date": "2026-11-02",
           "localizedDescription": "• Convert a Jibo to 5x1 now only asks for his IP address",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.1.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.4.1.ipa",
           "size": 5006889,
           "minOSVersion": "16.0"
         },
@@ -56,7 +56,7 @@
           "buildVersion": "7",
           "date": "2026-11-02",
           "localizedDescription": "• Convert a Jibo to 5x1: enter a modded Jibo's IP address and BEep installs 5x1 on him over SSH, showing its progress",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.4.ipa",
           "size": 5008994,
           "minOSVersion": "16.0"
         },
@@ -65,7 +65,7 @@
           "buildVersion": "6",
           "date": "2026-11-01",
           "localizedDescription": "• Removes the Music tab, since Jibo's Jukebox is gone. Jibo's Music player and AirPlay replace it",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.2.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.3.2.ipa",
           "size": 1028870,
           "minOSVersion": "16.0"
         },
@@ -74,7 +74,7 @@
           "buildVersion": "5",
           "date": "2026-11-01",
           "localizedDescription": "• Fixes the battery widget's Jibo list being empty after updating from an earlier BEep",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.1.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.3.1.ipa",
           "size": 1028915,
           "minOSVersion": "16.0"
         },
@@ -83,7 +83,7 @@
           "buildVersion": "4",
           "date": "2026-11-01",
           "localizedDescription": "• Choose which Jibo the battery widget shows: long-press it › Edit Widget › Jibo",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.3.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.3.ipa",
           "size": 1028756,
           "minOSVersion": "16.0"
         },
@@ -92,7 +92,7 @@
           "buildVersion": "3",
           "date": "2026-11-01",
           "localizedDescription": "• Jibo's battery widget for your Home Screen and Lock Screen",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.2.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.2.ipa",
           "size": 1014827,
           "minOSVersion": "16.0"
         },
@@ -101,7 +101,7 @@
           "buildVersion": "2",
           "date": "2026-11-01",
           "localizedDescription": "• Save Jibo's new photos to your iPhone\n• Get a notification when Jibo's battery is low\n• Use your iPhone's calendar for someone's personal report\n\nSwitch them on for each robot in More › Settings › On this iPhone.",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.1.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.1.ipa",
           "size": 849142,
           "minOSVersion": "16.0"
         },
@@ -110,7 +110,7 @@
           "buildVersion": "1",
           "date": "2026-11-01",
           "localizedDescription": "First release.",
-          "downloadURL": "https://alt.5x1.com/apps/BEep-1.0.ipa",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.0.ipa",
           "size": 791861,
           "minOSVersion": "16.0"
         }
@@ -130,7 +130,7 @@
       "version": "1.4.1",
       "versionDate": "2026-11-02",
       "versionDescription": "• Convert a Jibo to 5x1 now only asks for his IP address",
-      "downloadURL": "https://alt.5x1.com/apps/BEep-1.4.1.ipa",
+      "downloadURL": "https://apps.5x1.com/apps/BEep-1.4.1.ipa",
       "size": 5006889
     },
     {
@@ -139,27 +139,27 @@
       "developerName": "5x1",
       "subtitle": "Try new BEep features first.",
       "localizedDescription": "The newest BEep, published with every change before it reaches BEep. It installs next to BEep and can have bugs.\n\nBEep finds your Jibo on your Wi-Fi and opens BEacon, his control panel, with the iOS 26 Liquid Glass design.\n\n• Finds every Jibo on your Wi-Fi by itself and remembers them\n• Status, Screen, Music, Photos, People, Store, Server and Settings\n• Save Jibo's photos to your library and upload from your phone\n• Save Jibo's photos automatically, low-battery alerts, and your iPhone calendar for personal reports\n• Battery widget for your Home Screen and Lock Screen\n• Add a robot by IP address if it isn't found\n\nJibo needs BEam with BEacon.",
-      "iconURL": "https://alt.5x1.com/images/beep-beta-icon.png",
+      "iconURL": "https://apps.5x1.com/images/beep-beta-icon.png",
       "tintColor": "#29D780",
       "category": "utilities",
       "screenshots": [
         {
-          "imageURL": "https://alt.5x1.com/images/beep-home.png",
+          "imageURL": "https://apps.5x1.com/images/beep-home.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-robot.png",
+          "imageURL": "https://apps.5x1.com/images/beep-robot.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-settings.png",
+          "imageURL": "https://apps.5x1.com/images/beep-settings.png",
           "width": 603,
           "height": 1311
         },
         {
-          "imageURL": "https://alt.5x1.com/images/beep-widget.png",
+          "imageURL": "https://apps.5x1.com/images/beep-widget.png",
           "width": 603,
           "height": 1311
         }

@@ -3,26 +3,29 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>5x1 apps · AltStore source</title>
+<title>5x1 apps</title>
+<meta name="description" content="BEep and other apps for revived Jibo robots, for iPhone and Android.">
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 <style>
   :root { --bg: #111513; --panel: #161c18; --line: #303b33; --text: #eef1ec; --muted: #b0bbb2; --green: #29d780; }
   * { box-sizing: border-box; }
   body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at top, #1c3023 0%, var(--bg) 60%); color: var(--text);
-         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; display: grid; place-items: center; padding: 32px 20px; }
+         font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display: grid; place-items: center; padding: 32px 20px; }
   main { width: 100%; max-width: 520px; text-align: center; }
   .logo { width: 96px; height: 96px; }
   h1 { margin: 8px 0 4px; font-size: 32px; }
-  p { color: var(--muted); margin: 0 0 24px; }
+  h2 { margin: 30px 0 10px; font-size: 20px; text-align: left; }
+  p { color: var(--muted); margin: 0 0 20px; }
   .app { display: flex; gap: 16px; align-items: center; text-align: left; background: var(--panel); border: 1px solid var(--line);
-         border-radius: 20px; padding: 16px; margin-bottom: 20px; }
+         border-radius: 20px; padding: 16px; margin-bottom: 8px; }
   .app img { width: 64px; height: 64px; border-radius: 15px; }
-  .app h2 { margin: 0; font-size: 18px; }
+  .app h3 { margin: 0; font-size: 18px; }
   .app p { margin: 0; font-size: 14px; }
   .button { display: block; background: var(--green); color: #0d2015; border-radius: 14px; padding: 14px 20px; margin: 10px 0;
             font-weight: 650; text-decoration: none; }
   .button.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); }
-  code { display: block; margin-top: 18px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted);
+  .note { font-size: 13px; text-align: left; margin: 8px 4px 0; }
+  code { display: block; margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted);
          font: 13px ui-monospace, SFMono-Regular, Consolas, monospace; word-break: break-all; user-select: all; }
   footer { margin-top: 28px; font-size: 13px; color: var(--muted); }
   a { color: var(--green); }
@@ -32,23 +35,40 @@
 <main>
   <img class="logo" src="images/logo.svg" alt="5x1">
   <h1>5x1 apps</h1>
-  <p>Apps for revived Jibo robots, installed with AltStore or SideStore.</p>
+  <p>Apps for revived Jibo robots.</p>
 
   <div class="app">
     <img src="images/beep-icon.png" alt="">
     <div>
-      <h2>BEep</h2>
+      <h3>BEep</h3>
       <p>Your Jibo, in your pocket. Finds Jibo on your Wi-Fi and opens BEacon.</p>
     </div>
   </div>
 
-  <a class="button" href="altstore://source?url=https://alt.5x1.com/source.json">Add to AltStore</a>
-  <a class="button secondary" href="sidestore://source?url=https://alt.5x1.com/source.json">Add to SideStore</a>
-  <a class="button secondary" href="apps/BEep-1.3.1.ipa">Download BEep.ipa</a>
+  <h2>iPhone and iPad</h2>
+  <a class="button" href="altstore://source?url=https://apps.5x1.com/source.json">Add to AltStore</a>
+  <a class="button secondary" href="sidestore://source?url=https://apps.5x1.com/source.json">Add to SideStore</a>
+  <a class="button secondary" id="ipa" href="source.json">Download BEep for iPhone (.ipa)</a>
+  <code>https://apps.5x1.com/source.json</code>
 
-  <code>https://alt.5x1.com/source.json</code>
+  <h2>Android</h2>
+  <a class="button" id="apk" href="android.json">Download BEep for Android (.apk)</a>
+  <a class="button secondary" id="apk-beta" href="android.json">Download BEep BETA for Android</a>
+  <p class="note">Open the downloaded file to install it. Android asks once to allow installs from your browser. BEep BETA has the newest changes first and installs next to BEep.</p>
 
   <footer>Made by <a href="https://5x1.com">5x1</a></footer>
 </main>
+<script>
+  // Point the download buttons at the newest builds.
+  fetch('source.json').then(r => r.json()).then(source => {
+    const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
+    if (app) { const ipa = document.getElementById('ipa'); ipa.href = app.downloadURL; ipa.textContent = 'Download BEep ' + app.version + ' for iPhone (.ipa)'; }
+  }).catch(() => {});
+  fetch('android.json').then(r => r.json()).then(android => {
+    const apk = document.getElementById('apk'), beta = document.getElementById('apk-beta');
+    if (android.stable) { apk.href = android.stable.downloadURL; apk.textContent = 'Download BEep ' + android.stable.version + ' for Android (.apk)'; }
+    if (android.beta) beta.href = android.beta.downloadURL; else beta.remove();
+  }).catch(() => {});
+</script>
 </body>
 </html>
