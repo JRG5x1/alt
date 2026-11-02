@@ -178,10 +178,19 @@
       },
       "version": "1.4.1",
       "versionDate": "2026-11-02",
-      "versionDescription": "• Store: Details is a wider button",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-35/BEep-BETA-1.4.1-35.ipa",
-      "size": 4933637,
+      "versionDescription": "• The robot list screen no longer scrolls when everything fits, and takes less room",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-36/BEep-BETA-1.4.1-36.ipa",
+      "size": 4937776,
       "versions": [
+        {
+          "version": "1.4.1",
+          "buildVersion": "36",
+          "date": "2026-11-02",
+          "localizedDescription": "• The robot list screen no longer scrolls when everything fits, and takes less room",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-36/BEep-BETA-1.4.1-36.ipa",
+          "size": 4937776,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.4.1",
           "buildVersion": "35",
