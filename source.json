@@ -185,12 +185,21 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.4.1",
-      "versionDate": "2026-11-02",
-      "versionDescription": "• The robot list screen no longer scrolls when everything fits, and takes less room",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-36/BEep-BETA-1.4.1-36.ipa",
-      "size": 4937776,
+      "version": "1.5",
+      "versionDate": "2026-11-03",
+      "versionDescription": "• New Liquid Glass app icon",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-45/BEep-BETA-1.5-45.ipa",
+      "size": 8072664,
       "versions": [
+        {
+          "version": "1.5",
+          "buildVersion": "45",
+          "date": "2026-11-03",
+          "localizedDescription": "• New Liquid Glass app icon",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-45/BEep-BETA-1.5-45.ipa",
+          "size": 8072664,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.4.1",
           "buildVersion": "36",
@@ -225,15 +234,6 @@
           "localizedDescription": "• Liquid Glass through BEacon: cards, settings, Store, menus and dialogs are glass over soft green glows\n• Everything is green, including the Store\n• The tab bar's selection is a glass bubble that slides between tabs and follows your finger",
           "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-33/BEep-BETA-1.4.1-33.ipa",
           "size": 4933396,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.1",
-          "buildVersion": "32",
-          "date": "2026-11-02",
-          "localizedDescription": "• First BEep BETA: the newest BEep, published with every change. Installs next to BEep",
-          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-32/BEep-BETA-1.4.1-32.ipa",
-          "size": 4918838,
           "minOSVersion": "16.0"
         }
       ]
