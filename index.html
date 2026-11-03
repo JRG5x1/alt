@@ -46,12 +46,16 @@
     </div>
   </div>
 
+  <section id="apple">
   <h2>iPhone and iPad</h2>
   <a class="button" href="altstore://source?url=https://apps.5x1.com/source.json">Add to AltStore</a>
   <a class="button secondary" href="sidestore://source?url=https://apps.5x1.com/source.json">Add to SideStore</a>
   <a class="button secondary" id="ipa" href="source.json">Download BEep for iPhone (.ipa)</a>
   <code>https://apps.5x1.com/source.json</code>
 
+  </section>
+
+  <section id="android">
   <h2>Android</h2>
   <a class="button" href="fdroidrepos://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099">Add to F-Droid</a>
   <a class="button secondary" id="apk" href="android.json">Download BEep for Android (.apk)</a>
@@ -59,10 +63,13 @@
   <p class="note">Open the downloaded file to install it. Android asks once to allow installs from your browser. BEep BETA has the newest changes first and installs next to BEep.</p>
   <p class="note">With F-Droid, BEep and BEep BETA update by themselves. If the button doesn't open F-Droid, add this repository in F-Droid's settings:</p>
   <code>https://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099</code>
+  </section>
 
   <footer>Made by <a href="https://5x1.com">5x1</a></footer>
 </main>
 <script>
+  // Android visitors see the Android section first.
+  if (/Android/i.test(navigator.userAgent)) { const apple = document.getElementById('apple'); apple.parentNode.insertBefore(document.getElementById('android'), apple); }
   // Point the download buttons at the newest builds.
   fetch('source.json').then(r => r.json()).then(source => {
     const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
