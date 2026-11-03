@@ -187,10 +187,19 @@
       },
       "version": "1.5",
       "versionDate": "2026-11-03",
-      "versionDescription": "• Ask Jibo “How is my phone’s battery?”\n• The first time you open a Jibo, BEep asks who you are and which iPhone features to use (or Skip)\n• Long-press a Jibo to give him a remote address, used when he isn't on your Wi-Fi",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-46/BEep-BETA-1.5-46.ipa",
-      "size": 8126012,
+      "versionDescription": "• Your phone's calendar is now a switch, sent for whoever the phone belongs to\n• Jibo tells you your own phone's battery when he recognises your voice",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-47/BEep-BETA-1.5-47.ipa",
+      "size": 8126606,
       "versions": [
+        {
+          "version": "1.5",
+          "buildVersion": "47",
+          "date": "2026-11-03",
+          "localizedDescription": "• Your phone's calendar is now a switch, sent for whoever the phone belongs to\n• Jibo tells you your own phone's battery when he recognises your voice",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-47/BEep-BETA-1.5-47.ipa",
+          "size": 8126606,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.5",
           "buildVersion": "46",
@@ -225,15 +234,6 @@
           "localizedDescription": "• Store: Details is a wider button",
           "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-35/BEep-BETA-1.4.1-35.ipa",
           "size": 4933637,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.1",
-          "buildVersion": "34",
-          "date": "2026-11-02",
-          "localizedDescription": "• Store is in the tab bar; More has Server and Settings\n• Store: Details is a link again and its popup is easy to read\n• Less space at the top of the home screen, so it doesn't scroll",
-          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-34/BEep-BETA-1.4.1-34.ipa",
-          "size": 4933607,
           "minOSVersion": "16.0"
         }
       ]
