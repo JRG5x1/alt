@@ -194,12 +194,21 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.5",
-      "versionDate": "2026-11-03",
-      "versionDescription": "• Your phone's calendar is now a switch, sent for whoever the phone belongs to\n• Jibo tells you your own phone's battery when he recognises your voice",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-47/BEep-BETA-1.5-47.ipa",
-      "size": 8126606,
+      "version": "1.6",
+      "versionDate": "2026-11-05",
+      "versionDescription": "• Convert now spots a Jibo that was never set up (OOBE) and runs the OOBE setup instead of the normal one\n• On an older factory Jibo, Convert says when it only updated his system and asks you to convert again once the update is done",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-49/BEep-BETA-1.6-49.ipa",
+      "size": 8127534,
       "versions": [
+        {
+          "version": "1.6",
+          "buildVersion": "49",
+          "date": "2026-11-05",
+          "localizedDescription": "• Convert now spots a Jibo that was never set up (OOBE) and runs the OOBE setup instead of the normal one\n• On an older factory Jibo, Convert says when it only updated his system and asks you to convert again once the update is done",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-49/BEep-BETA-1.6-49.ipa",
+          "size": 8127534,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.5",
           "buildVersion": "47",
@@ -234,15 +243,6 @@
           "localizedDescription": "• The robot list screen no longer scrolls when everything fits, and takes less room",
           "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-36/BEep-BETA-1.4.1-36.ipa",
           "size": 4937776,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.1",
-          "buildVersion": "35",
-          "date": "2026-11-02",
-          "localizedDescription": "• Store: Details is a wider button",
-          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-35/BEep-BETA-1.4.1-35.ipa",
-          "size": 4933637,
           "minOSVersion": "16.0"
         }
       ]

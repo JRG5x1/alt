@@ -8,6 +8,14 @@
   },
   "betaVersions": [
     {
+      "version": "1.5",
+      "buildVersion": "13",
+      "date": "2026-11-05",
+      "notes": "• Convert now spots a Jibo that was never set up (OOBE) and runs the OOBE setup instead of the normal one\n• On an older factory Jibo, Convert says when it only updated his system and asks you to convert again once the update is done",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-13/BEep-BETA-1.5-13.apk",
+      "size": 1204080
+    },
+    {
       "version": "1.4.1",
       "buildVersion": "7",
       "date": "2026-11-02",
@@ -25,11 +33,11 @@
     }
   ],
   "beta": {
-    "version": "1.4.1",
-    "buildVersion": "7",
-    "date": "2026-11-02",
-    "notes": "• The app icon fills your launcher's icon shape, instead of a dark square on a white bubble",
-    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-7/BEep-BETA-1.4.1-7.apk",
-    "size": 1203744
+    "version": "1.5",
+    "buildVersion": "13",
+    "date": "2026-11-05",
+    "notes": "• Convert now spots a Jibo that was never set up (OOBE) and runs the OOBE setup instead of the normal one\n• On an older factory Jibo, Convert says when it only updated his system and asks you to convert again once the update is done",
+    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-13/BEep-BETA-1.5-13.apk",
+    "size": 1204080
   }
 }
