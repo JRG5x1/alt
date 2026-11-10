@@ -195,11 +195,20 @@
         }
       },
       "version": "1.6",
-      "versionDate": "2026-11-05",
-      "versionDescription": "• Convert now spots a Jibo that was never set up (OOBE) and runs the OOBE setup instead of the normal one\n• On an older factory Jibo, Convert says when it only updated his system and asks you to convert again once the update is done",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-49/BEep-BETA-1.6-49.ipa",
-      "size": 8127534,
+      "versionDate": "2026-11-10",
+      "versionDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-50/BEep-BETA-1.6-50.ipa",
+      "size": 8129236,
       "versions": [
+        {
+          "version": "1.6",
+          "buildVersion": "50",
+          "date": "2026-11-10",
+          "localizedDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-50/BEep-BETA-1.6-50.ipa",
+          "size": 8129236,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.6",
           "buildVersion": "49",
@@ -234,15 +243,6 @@
           "localizedDescription": "• New Liquid Glass app icon",
           "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-45/BEep-BETA-1.5-45.ipa",
           "size": 8072664,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.4.1",
-          "buildVersion": "36",
-          "date": "2026-11-02",
-          "localizedDescription": "• The robot list screen no longer scrolls when everything fits, and takes less room",
-          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-36/BEep-BETA-1.4.1-36.ipa",
-          "size": 4937776,
           "minOSVersion": "16.0"
         }
       ]
