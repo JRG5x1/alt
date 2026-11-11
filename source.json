@@ -43,6 +43,15 @@
       ],
       "versions": [
         {
+          "version": "1.7",
+          "buildVersion": "11",
+          "date": "2026-11-11",
+          "localizedDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.7.ipa",
+          "size": 7436587,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.6",
           "buildVersion": "10",
           "date": "2026-11-03",
@@ -145,11 +154,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.6",
-      "versionDate": "2026-11-03",
-      "versionDescription": "• New Liquid Glass app icon\n• Ask Jibo “How is my phone’s battery?” He answers with your own phone when he recognises your voice\n• The first time you open a Jibo, BEep asks who you are and which iPhone features to use (or Skip)\n• Long-press a Jibo to give him a remote address, used when he isn't on your Wi-Fi\n• Your phone's calendar is now a switch, sent for whoever the phone belongs to",
-      "downloadURL": "https://apps.5x1.com/apps/BEep-1.6.ipa",
-      "size": 7434768
+      "version": "1.7",
+      "versionDate": "2026-11-11",
+      "versionDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
+      "downloadURL": "https://apps.5x1.com/apps/BEep-1.7.ipa",
+      "size": 7436587
     },
     {
       "name": "BEep BETA",

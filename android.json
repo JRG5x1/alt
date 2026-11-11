@@ -1,10 +1,10 @@
 {
   "stable": {
-    "version": "1.5",
-    "date": "2026-11-02",
-    "notes": "• A proper app icon that fills your launcher's icon shape, instead of a dark square on a white bubble",
-    "downloadURL": "https://apps.5x1.com/apps/BEep-1.5.apk",
-    "size": 1203404
+    "version": "1.7",
+    "date": "2026-11-11",
+    "notes": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
+    "downloadURL": "https://apps.5x1.com/apps/BEep-1.7.apk",
+    "size": 1204400
   },
   "betaVersions": [
     {
