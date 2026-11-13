@@ -43,6 +43,15 @@
       ],
       "versions": [
         {
+          "version": "1.8",
+          "buildVersion": "12",
+          "date": "2026-11-13",
+          "localizedDescription": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+          "downloadURL": "https://apps.5x1.com/apps/BEep-1.8.ipa",
+          "size": 7436876,
+          "minOSVersion": "16.0"
+        },
+        {
           "version": "1.7",
           "buildVersion": "11",
           "date": "2026-11-11",
@@ -154,11 +163,11 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.7",
-      "versionDate": "2026-11-11",
-      "versionDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
-      "downloadURL": "https://apps.5x1.com/apps/BEep-1.7.ipa",
-      "size": 7436587
+      "version": "1.8",
+      "versionDate": "2026-11-13",
+      "versionDescription": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+      "downloadURL": "https://apps.5x1.com/apps/BEep-1.8.ipa",
+      "size": 7436876
     },
     {
       "name": "BEep BETA",
@@ -203,12 +212,21 @@
           "NSPhotoLibraryAddUsageDescription": "Save Jibo's photos to your library."
         }
       },
-      "version": "1.6",
-      "versionDate": "2026-11-10",
-      "versionDescription": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
-      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-50/BEep-BETA-1.6-50.ipa",
-      "size": 8129236,
+      "version": "1.8",
+      "versionDate": "2026-11-13",
+      "versionDescription": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-53/BEep-BETA-1.8-53.ipa",
+      "size": 8128791,
       "versions": [
+        {
+          "version": "1.8",
+          "buildVersion": "53",
+          "date": "2026-11-13",
+          "localizedDescription": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-53/BEep-BETA-1.8-53.ipa",
+          "size": 8128791,
+          "minOSVersion": "16.0"
+        },
         {
           "version": "1.6",
           "buildVersion": "50",
@@ -243,15 +261,6 @@
           "localizedDescription": "• Ask Jibo “How is my phone’s battery?”\n• The first time you open a Jibo, BEep asks who you are and which iPhone features to use (or Skip)\n• Long-press a Jibo to give him a remote address, used when he isn't on your Wi-Fi",
           "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-46/BEep-BETA-1.5-46.ipa",
           "size": 8126012,
-          "minOSVersion": "16.0"
-        },
-        {
-          "version": "1.5",
-          "buildVersion": "45",
-          "date": "2026-11-03",
-          "localizedDescription": "• New Liquid Glass app icon",
-          "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-beta-45/BEep-BETA-1.5-45.ipa",
-          "size": 8072664,
           "minOSVersion": "16.0"
         }
       ]
