@@ -1,12 +1,20 @@
 {
   "stable": {
-    "version": "1.7",
-    "date": "2026-11-11",
-    "notes": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
-    "downloadURL": "https://apps.5x1.com/apps/BEep-1.7.apk",
-    "size": 1204400
+    "version": "1.8",
+    "date": "2026-11-13",
+    "notes": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+    "downloadURL": "https://apps.5x1.com/apps/BEep-1.8.apk",
+    "size": 1204356
   },
   "betaVersions": [
+    {
+      "version": "1.8",
+      "buildVersion": "16",
+      "date": "2026-11-13",
+      "notes": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+      "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-16/BEep-BETA-1.8-16.apk",
+      "size": 1204756
+    },
     {
       "version": "1.5",
       "buildVersion": "14",
@@ -41,11 +49,11 @@
     }
   ],
   "beta": {
-    "version": "1.5",
-    "buildVersion": "14",
-    "date": "2026-11-10",
-    "notes": "• New Reports tab under More: pick a person, then set their calendar, commute (home and work or school) and news topics, plus Jibo's weather location and units",
-    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-14/BEep-BETA-1.5-14.apk",
-    "size": 1204960
+    "version": "1.8",
+    "buildVersion": "16",
+    "date": "2026-11-13",
+    "notes": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
+    "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-16/BEep-BETA-1.8-16.apk",
+    "size": 1204756
   }
 }
