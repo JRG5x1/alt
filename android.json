@@ -55,5 +55,12 @@
     "notes": "• Reports is now a tab on the bottom bar, between People and Store (it was under More)",
     "downloadURL": "https://github.com/JRG5x1/alt/releases/download/beep-android-beta-16/BEep-BETA-1.8-16.apk",
     "size": 1204756
+  },
+  "reviveAMaker": {
+    "version": "1.1.0",
+    "date": "2026-11-14",
+    "notes": "Revive-A-Maker 1.1.0: Be a Maker revived and renamed. Fixes the pairing screen's robot picture and an error shown when connecting to 5x1 robots.",
+    "size": 76724245,
+    "downloadURL": "https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0.apk"
   }
 }

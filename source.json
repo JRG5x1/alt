@@ -264,6 +264,37 @@
           "minOSVersion": "16.0"
         }
       ]
+    },
+    {
+      "name": "Revive-A-Maker",
+      "bundleIdentifier": "com.jiborevival.reviveamaker",
+      "developerName": "5x1",
+      "iconURL": "https://apps.5x1.com/images/revive-a-maker-ios-icon.png",
+      "subtitle": "Program Jibo with Scratch.",
+      "tintColor": "#F08A2C",
+      "category": "education",
+      "localizedDescription": "Be a Maker, Jibo's Scratch companion, revived: snap blocks together to make Jibo talk, listen, look around, show pictures and react to touch. Works best on an iPad. Your iPhone or iPad must be on the same Wi-Fi as Jibo.",
+      "versions": [
+        {
+          "version": "1.1.0",
+          "buildVersion": "1",
+          "date": "2026-11-14",
+          "localizedDescription": "Revive-A-Maker 1.1.0: Be a Maker revived and renamed. Fixes the pairing screen's robot picture and an error shown when connecting to 5x1 robots.",
+          "downloadURL": "https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0.ipa",
+          "size": 11815152,
+          "minOSVersion": "18.0"
+        }
+      ],
+      "appPermissions": {
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Revive-A-Maker connects to Jibo on your Wi-Fi."
+        }
+      },
+      "version": "1.1.0",
+      "versionDate": "2026-11-14",
+      "versionDescription": "Revive-A-Maker 1.1.0: Be a Maker revived and renamed. Fixes the pairing screen's robot picture and an error shown when connecting to 5x1 robots.",
+      "downloadURL": "https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0.ipa",
+      "size": 11815152
     }
   ],
   "news": []

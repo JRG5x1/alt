@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>5x1 apps</title>
-<meta name="description" content="BEep and other apps for revived Jibo robots, for iPhone and Android.">
+<meta name="description" content="BEep, Revive-A-Maker and other apps for revived Jibo robots, for iPhone and Android.">
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 <style>
   @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans.woff2") format("woff2"); font-weight: 100 900; font-stretch: 62.5% 100%; font-display: swap; }
@@ -46,11 +46,20 @@
     </div>
   </div>
 
+  <div class="app">
+    <img src="images/revive-a-maker-icon.png" alt="">
+    <div>
+      <h3>Revive-A-Maker</h3>
+      <p>Be a Maker, revived: program Jibo with Scratch. Best on a tablet.</p>
+    </div>
+  </div>
+
   <section id="apple">
   <h2>iPhone and iPad</h2>
   <a class="button" href="altstore://source?url=https://apps.5x1.com/source.json">Add to AltStore</a>
   <a class="button secondary" href="sidestore://source?url=https://apps.5x1.com/source.json">Add to SideStore</a>
   <a class="button secondary" id="ipa" href="source.json">Download BEep for iPhone (.ipa)</a>
+  <a class="button secondary" id="ram-ipa" href="source.json">Download Revive-A-Maker for iPhone and iPad (.ipa)</a>
   <code>https://apps.5x1.com/source.json</code>
 
   </section>
@@ -60,8 +69,9 @@
   <a class="button" href="fdroidrepos://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099">Add to F-Droid</a>
   <a class="button secondary" id="apk" href="android.json">Download BEep for Android (.apk)</a>
   <a class="button secondary" id="apk-beta" href="android.json">Download BEep BETA for Android</a>
+  <a class="button secondary" id="ram-apk" href="android.json">Download Revive-A-Maker for Android (.apk)</a>
   <p class="note">Open the downloaded file to install it. Android asks once to allow installs from your browser. BEep BETA has the newest changes first and installs next to BEep.</p>
-  <p class="note">With F-Droid, BEep and BEep BETA update by themselves. If the button doesn't open F-Droid, add this repository in F-Droid's settings:</p>
+  <p class="note">With F-Droid, BEep, BEep BETA and Revive-A-Maker update by themselves. If the button doesn't open F-Droid, add this repository in F-Droid's settings:</p>
   <code>https://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099</code>
   </section>
 
@@ -74,11 +84,15 @@
   fetch('source.json').then(r => r.json()).then(source => {
     const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
     if (app) { const ipa = document.getElementById('ipa'); ipa.href = app.downloadURL; ipa.textContent = 'Download BEep ' + app.version + ' for iPhone (.ipa)'; }
+    const ram = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.reviveamaker'), ramIpa = document.getElementById('ram-ipa');
+    if (ram) { ramIpa.href = ram.downloadURL; ramIpa.textContent = 'Download Revive-A-Maker ' + ram.version + ' for iPhone and iPad (.ipa)'; } else ramIpa.remove();
   }).catch(() => {});
   fetch('android.json').then(r => r.json()).then(android => {
     const apk = document.getElementById('apk'), beta = document.getElementById('apk-beta');
     if (android.stable) { apk.href = android.stable.downloadURL; apk.textContent = 'Download BEep ' + android.stable.version + ' for Android (.apk)'; }
     if (android.beta) beta.href = android.beta.downloadURL; else beta.remove();
+    const ram = document.getElementById('ram-apk');
+    if (android.reviveAMaker) { ram.href = android.reviveAMaker.downloadURL; ram.textContent = 'Download Revive-A-Maker ' + android.reviveAMaker.version + ' for Android (.apk)'; } else ram.remove();
   }).catch(() => {});
 </script>
 </body>
