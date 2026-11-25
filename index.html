@@ -12,19 +12,27 @@
   * { box-sizing: border-box; }
   body { margin: 0; min-height: 100vh; background: radial-gradient(ellipse at top, #1c3023 0%, var(--bg) 60%); color: var(--text);
          font: 16px/1.5 "Noto Sans", sans-serif; display: grid; place-items: center; padding: 32px 20px; }
-  main { width: 100%; max-width: 520px; text-align: center; }
+  main { width: 100%; max-width: 560px; text-align: center; }
   .logo { width: 96px; height: 96px; }
   h1 { margin: 8px 0 4px; font-size: 32px; }
-  h2 { margin: 30px 0 10px; font-size: 20px; text-align: left; }
+  h2 { margin: 0; font-size: 22px; }
+  h3 { margin: 22px 0 8px; font-size: 17px; text-align: left; }
   p { color: var(--muted); margin: 0 0 20px; }
-  .app { display: flex; gap: 16px; align-items: center; text-align: left; background: var(--panel); border: 1px solid var(--line);
-         border-radius: 20px; padding: 16px; margin-bottom: 8px; }
-  .app img { width: 64px; height: 64px; border-radius: 15px; }
-  .app h3 { margin: 0; font-size: 18px; }
-  .app p { margin: 0; font-size: 14px; }
-  .button { display: block; background: var(--green); color: #0d2015; border-radius: 14px; padding: 14px 20px; margin: 10px 0;
-            font-weight: 650; text-decoration: none; }
-  .button.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); }
+  .app { text-align: left; background: var(--panel); border: 1px solid var(--line); border-radius: 22px; padding: 18px; margin: 18px 0; }
+  .app header { display: flex; gap: 16px; align-items: center; }
+  .app header img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+  .app header p { margin: 2px 0 0; font-size: 14px; }
+  .button { display: block; background: var(--green); color: #0d2015; border-radius: 14px; padding: 14px 20px; margin: 16px 0 12px;
+            font-weight: 650; text-decoration: none; text-align: center; }
+  .button.secondary { background: transparent; color: var(--text); border: 1px solid var(--line); margin: 10px 0; }
+  .systems { display: grid; grid-template-columns: repeat(auto-fit, minmax(92px, 1fr)); gap: 8px; }
+  .systems a { display: block; border: 1px solid var(--line); border-radius: 12px; padding: 10px 6px; color: var(--text); text-decoration: none;
+               text-align: center; font-size: 14px; font-weight: 600; line-height: 1.3; }
+  .systems a small { display: block; color: var(--muted); font-weight: 400; font-size: 12px; }
+  .systems a:hover, .systems a.here { border-color: var(--green); }
+  .extra { display: block; font-size: 13px; margin-top: 12px; }
+  .help { text-align: left; margin-top: 28px; }
+  .help h2 { font-size: 20px; }
   .note { font-size: 13px; text-align: left; margin: 8px 4px 0; }
   code { display: block; margin-top: 12px; padding: 12px; border: 1px solid var(--line); border-radius: 12px; color: var(--muted);
          font: 13px ui-monospace, SFMono-Regular, Consolas, monospace; word-break: break-all; user-select: all; }
@@ -38,87 +46,127 @@
   <h1>5x1 apps</h1>
   <p>Apps for revived Jibo robots.</p>
 
-  <div class="app">
-    <img src="images/beep-icon.png" alt="">
-    <div>
-      <h3>BEep</h3>
-      <p>Your Jibo, in your pocket and on your computer. Finds Jibo on your Wi-Fi and opens BEacon.</p>
+  <section class="app" id="beep">
+    <header>
+      <img src="images/beep-icon.png" alt="">
+      <div>
+        <h2>BEep</h2>
+        <p>Your Jibo, in your pocket and on your computer. Finds Jibo on your Wi-Fi and opens BEacon.</p>
+      </div>
+    </header>
+    <a class="button" data-primary hidden></a>
+    <div class="systems">
+      <a data-os="ios" href="source.json">iPhone<small>.ipa</small></a>
+      <a data-os="android" href="android.json">Android<small>.apk</small></a>
+      <a data-os="windows" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-windows-portable.exe">Windows<small>portable .exe</small></a>
+      <a data-os="mac" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-mac-universal.zip">Mac<small>.app</small></a>
+      <a data-os="linux" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-linux-x86_64.AppImage">Linux<small>.AppImage</small></a>
     </div>
-  </div>
-
-  <div class="app">
-    <img src="images/revive-a-maker-icon.png" alt="">
-    <div>
-      <h3>Revive-A-Maker</h3>
-      <p>Be a Maker, revived: program Jibo with Scratch. Best on a tablet or computer.</p>
-    </div>
-  </div>
-
-  <section id="apple">
-  <h2>iPhone and iPad</h2>
-  <a class="button" href="altstore://source?url=https://apps.5x1.com/source.json">Add to AltStore</a>
-  <a class="button secondary" href="sidestore://source?url=https://apps.5x1.com/source.json">Add to SideStore</a>
-  <a class="button secondary" id="ipa" href="source.json">Download BEep for iPhone (.ipa)</a>
-  <a class="button secondary" id="ram-ipa" href="source.json">Download Revive-A-Maker for iPhone and iPad (.ipa)</a>
-  <code>https://apps.5x1.com/source.json</code>
-
+    <a class="extra" id="beep-beta" href="android.json">BEep BETA for Android (.apk): the newest changes first, installs next to BEep</a>
   </section>
 
-  <section id="android">
-  <h2>Android</h2>
-  <a class="button" href="fdroidrepos://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099">Add to F-Droid</a>
-  <a class="button secondary" id="apk" href="android.json">Download BEep for Android (.apk)</a>
-  <a class="button secondary" id="apk-beta" href="android.json">Download BEep BETA for Android</a>
-  <a class="button secondary" id="ram-apk" href="android.json">Download Revive-A-Maker for Android (.apk)</a>
-  <p class="note">Open the downloaded file to install it. Android asks once to allow installs from your browser. BEep BETA has the newest changes first and installs next to BEep.</p>
-  <p class="note">With F-Droid, BEep, BEep BETA and Revive-A-Maker update by themselves. If the button doesn't open F-Droid, add this repository in F-Droid's settings:</p>
-  <code>https://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099</code>
+  <section class="app" id="ram">
+    <header>
+      <img src="images/revive-a-maker-icon.png" alt="">
+      <div>
+        <h2>Revive-A-Maker</h2>
+        <p>Be a Maker, revived: program Jibo with Scratch. Best on a tablet or computer.</p>
+      </div>
+    </header>
+    <a class="button" data-primary hidden></a>
+    <div class="systems">
+      <a data-os="ios" href="source.json">iPhone &amp; iPad<small>.ipa</small></a>
+      <a data-os="android" href="android.json">Android<small>.apk</small></a>
+      <a data-os="windows" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-windows-portable.exe">Windows<small>portable .exe</small></a>
+      <a data-os="mac" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-mac-universal.zip">Mac<small>.app</small></a>
+      <a data-os="linux" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-linux-x86_64.AppImage">Linux<small>.AppImage</small></a>
+    </div>
   </section>
 
-  <section id="computer">
-  <h2>Windows, Mac and Linux</h2>
-  <a class="button" id="beetle-win" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-windows-portable.exe">Download BEep 2.1.0 for Windows (portable .exe)</a>
-  <a class="button secondary" id="beetle-mac" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-mac-universal.zip">Download BEep 2.1.0 for Mac (.app)</a>
-  <a class="button secondary" id="beetle-linux" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-linux-x86_64.AppImage">Download BEep 2.1.0 for Linux (.AppImage)</a>
-  <a class="button secondary" id="ram-win" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-windows-portable.exe">Download Revive-A-Maker 1.1.0 for Windows (portable .exe)</a>
-  <a class="button secondary" id="ram-mac" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-mac-universal.zip">Download Revive-A-Maker 1.1.0 for Mac (.app)</a>
-  <a class="button secondary" id="ram-linux" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-linux-x86_64.AppImage">Download Revive-A-Maker 1.1.0 for Linux (.AppImage)</a>
-  <p class="note">Windows: no install needed, just open the .exe. If SmartScreen warns, choose More info, then Run anyway.</p>
-  <p class="note">Mac (Intel and Apple Silicon): unzip, move the app to Applications, then right-click it and choose Open the first time.</p>
-  <p class="note">Linux: make the .AppImage executable (right-click, Properties, or <span style="white-space:nowrap">chmod +x</span>) and open it.</p>
+  <section class="help">
+    <h2>Installing</h2>
+    <h3 id="help-ios">iPhone and iPad</h3>
+    <a class="button secondary" href="altstore://source?url=https://apps.5x1.com/source.json">Add to AltStore</a>
+    <a class="button secondary" href="sidestore://source?url=https://apps.5x1.com/source.json">Add to SideStore</a>
+    <p class="note">The 5x1 source has both apps, and AltStore or SideStore keeps them up to date. A downloaded .ipa needs one of them (or another sideloading tool) to install. Source address:</p>
+    <code>https://apps.5x1.com/source.json</code>
+
+    <h3 id="help-android">Android</h3>
+    <a class="button secondary" href="fdroidrepos://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099">Add to F-Droid</a>
+    <p class="note">With F-Droid, BEep, BEep BETA and Revive-A-Maker update by themselves. Or open a downloaded .apk to install it; Android asks once to allow installs from your browser. If the button doesn't open F-Droid, add this repository in F-Droid's settings:</p>
+    <code>https://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099</code>
+
+    <h3 id="help-computer">Windows, Mac and Linux</h3>
+    <p class="note">Windows: no install needed, just open the .exe. If SmartScreen warns, choose More info, then Run anyway.</p>
+    <p class="note">Mac (Intel and Apple Silicon): unzip, move the app to Applications, then right-click it and choose Open the first time.</p>
+    <p class="note">Linux: make the .AppImage executable (right-click, Properties, or <span style="white-space:nowrap">chmod +x</span>) and open it.</p>
   </section>
 
   <footer>Made by <a href="https://5x1.com">5x1</a></footer>
 </main>
 <script>
-  // Android visitors see the Android section first, computer visitors the computer one.
-  const apple = document.getElementById('apple');
-  if (/Android/i.test(navigator.userAgent)) apple.parentNode.insertBefore(document.getElementById('android'), apple);
-  else if (!/iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) && navigator.maxTouchPoints < 2) apple.parentNode.insertBefore(document.getElementById('computer'), apple);
-  // The computer builds are GitHub release assets (too big for this site; BEep's repo is still named BEetle): follow the newest release.
-  [['BEetle', 'beetle', 'BEep'], ['Revive-A-Maker', 'ram', 'Revive-A-Maker']].forEach(([repo, prefix, name]) => {
+  // Each app: a download per system, and a big green button for the system this visitor is on.
+  const ALTSTORE = 'altstore://source?url=https://apps.5x1.com/source.json';
+  const FDROID = 'fdroidrepos://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099';
+  const NAMES = { ios: 'iPhone', android: 'Android', windows: 'Windows', mac: 'Mac', linux: 'Linux' };
+  const ua = navigator.userAgent;
+  const os = /Android/i.test(ua) ? 'android'
+    : /iPhone|iPad|iPod/i.test(ua) || (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1) ? 'ios' // iPads ask for the desktop site
+    : /Windows/i.test(ua) ? 'windows' : /Macintosh|Mac OS X/i.test(ua) ? 'mac' : /Linux|X11/i.test(ua) && !/CrOS/.test(ua) ? 'linux' : null;
+  const apps = { beep: { name: 'BEep', versions: {} }, ram: { name: 'Revive-A-Maker', versions: {} } };
+
+  function link(app, system, href, version) {
+    const a = document.querySelector('#' + app + ' [data-os="' + system + '"]');
+    if (!href) { a.remove(); return; }
+    a.href = href; apps[app].versions[system] = version;
+    render(app);
+  }
+
+  function render(app) {
+    const section = document.getElementById(app), primary = section.querySelector('[data-primary]');
+    const own = os && section.querySelector('[data-os="' + os + '"]');
+    section.querySelectorAll('.here').forEach(a => a.classList.remove('here'));
+    if (!own) { primary.hidden = true; return; }
+    own.classList.add('here');
+    const { name, versions } = apps[app], version = versions[os] ? ' ' + versions[os] : '';
+    // Phones: the store that installs and updates it; computers: the file itself.
+    if (os === 'ios') { primary.href = ALTSTORE; primary.textContent = 'Get ' + name + ' for iPhone with AltStore'; }
+    else if (os === 'android') { primary.href = FDROID; primary.textContent = 'Get ' + name + ' for Android with F-Droid'; }
+    else { primary.href = own.href; primary.textContent = 'Download ' + name + version + ' for ' + NAMES[os]; }
+    if (app === 'ram' && os === 'ios') primary.textContent = 'Get ' + name + ' for iPhone and iPad with AltStore';
+    primary.hidden = false;
+  }
+
+  render('beep'); render('ram');
+  // Phones: the newest builds listed in this site's AltStore source and Android feed.
+  fetch('source.json').then(r => r.json()).then(source => {
+    const find = id => source.apps.find(a => a.bundleIdentifier === id) || {};
+    const beep = find('com.jiborevival.beep'), ram = find('com.jiborevival.reviveamaker');
+    link('beep', 'ios', beep.downloadURL, beep.version);
+    link('ram', 'ios', ram.downloadURL, ram.version);
+  }).catch(() => {});
+  fetch('android.json').then(r => r.json()).then(android => {
+    link('beep', 'android', android.stable && android.stable.downloadURL, android.stable && android.stable.version);
+    link('ram', 'android', android.reviveAMaker && android.reviveAMaker.downloadURL, android.reviveAMaker && android.reviveAMaker.version);
+    const beta = document.getElementById('beep-beta');
+    if (android.beta) beta.href = android.beta.downloadURL; else beta.remove();
+  }).catch(() => {});
+  // Computers: GitHub release assets (too big for this site; BEep's repo is still named BEetle), newest release.
+  [['beep', 'BEetle'], ['ram', 'Revive-A-Maker']].forEach(([app, repo]) => {
     fetch('https://api.github.com/repos/Jibo-Revival-Group/' + repo + '/releases/latest').then(r => r.json()).then(release => {
       const v = (release.tag_name || '').replace(/^v/, ''), find = re => (release.assets || []).find(a => re.test(a.name));
-      [['-win', /windows-portable\.exe$/, 'Windows (portable .exe)'], ['-mac', /mac.*\.zip$/, 'Mac (.app)'], ['-linux', /\.AppImage$/, 'Linux (.AppImage)']].forEach(([id, re, label]) => {
-        const asset = find(re), a = document.getElementById(prefix + id);
-        if (asset && v) { a.href = asset.browser_download_url; a.textContent = 'Download ' + name + ' ' + v + ' for ' + label; }
+      [['windows', /windows-portable\.exe$/], ['mac', /mac.*\.zip$/], ['linux', /\.AppImage$/]].forEach(([system, re]) => {
+        const asset = find(re);
+        if (asset && v) link(app, system, asset.browser_download_url, v);
       });
     }).catch(() => {});
   });
-  // Point the download buttons at the newest builds.
-  fetch('source.json').then(r => r.json()).then(source => {
-    const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
-    if (app) { const ipa = document.getElementById('ipa'); ipa.href = app.downloadURL; ipa.textContent = 'Download BEep ' + app.version + ' for iPhone (.ipa)'; }
-    const ram = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.reviveamaker'), ramIpa = document.getElementById('ram-ipa');
-    if (ram) { ramIpa.href = ram.downloadURL; ramIpa.textContent = 'Download Revive-A-Maker ' + ram.version + ' for iPhone and iPad (.ipa)'; } else ramIpa.remove();
-  }).catch(() => {});
-  fetch('android.json').then(r => r.json()).then(android => {
-    const apk = document.getElementById('apk'), beta = document.getElementById('apk-beta');
-    if (android.stable) { apk.href = android.stable.downloadURL; apk.textContent = 'Download BEep ' + android.stable.version + ' for Android (.apk)'; }
-    if (android.beta) beta.href = android.beta.downloadURL; else beta.remove();
-    const ram = document.getElementById('ram-apk');
-    if (android.reviveAMaker) { ram.href = android.reviveAMaker.downloadURL; ram.textContent = 'Download Revive-A-Maker ' + android.reviveAMaker.version + ' for Android (.apk)'; } else ram.remove();
-  }).catch(() => {});
+  // Until a lookup answers, the built-in links stand; show their versions for computers.
+  ['windows', 'mac', 'linux'].forEach(system => {
+    const v = { beep: '2.1.0', ram: '1.1.0' };
+    Object.keys(v).forEach(app => { if (!apps[app].versions[system]) apps[app].versions[system] = v[app]; });
+  });
+  render('beep'); render('ram');
 </script>
 </body>
 </html>
