@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>5x1 apps</title>
-<meta name="description" content="BEep, Revive-A-Maker and other apps for revived Jibo robots, for iPhone and Android.">
+<meta name="description" content="BEep, Revive-A-Maker and other apps for revived Jibo robots, for iPhone, Android, Windows, Mac and Linux.">
 <link rel="icon" href="images/logo.svg" type="image/svg+xml">
 <style>
   @font-face { font-family: "Noto Sans"; src: url("fonts/NotoSans.woff2") format("woff2"); font-weight: 100 900; font-stretch: 62.5% 100%; font-display: swap; }
@@ -47,6 +47,14 @@
   </div>
 
   <div class="app">
+    <img src="images/beetle-icon.png" alt="">
+    <div>
+      <h3>BEetle</h3>
+      <p>BEep for your computer: finds Jibo on your Wi-Fi, opens BEacon and converts robots to 5x1.</p>
+    </div>
+  </div>
+
+  <div class="app">
     <img src="images/revive-a-maker-icon.png" alt="">
     <div>
       <h3>Revive-A-Maker</h3>
@@ -75,11 +83,31 @@
   <code>https://apps.5x1.com/fdroid/repo?fingerprint=6972056445AEC814CFBD42234FB369106DBEBEC161E8C55358D1089AFAD6D099</code>
   </section>
 
+  <section id="computer">
+  <h2>Windows, Mac and Linux</h2>
+  <a class="button" id="beetle-win" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.0.0/BEetle-2.0.0-windows-portable.exe">Download BEetle 2.0.0 for Windows (portable .exe)</a>
+  <a class="button secondary" id="beetle-mac" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.0.0/BEetle-2.0.0-mac-universal.zip">Download BEetle 2.0.0 for Mac (.app)</a>
+  <a class="button secondary" id="beetle-linux" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.0.0/BEetle-2.0.0-linux-x86_64.AppImage">Download BEetle 2.0.0 for Linux (.AppImage)</a>
+  <p class="note">Windows: no install needed, just open the .exe. If SmartScreen warns, choose More info, then Run anyway.</p>
+  <p class="note">Mac (Intel and Apple Silicon): unzip, move BEetle to Applications, then right-click it and choose Open the first time.</p>
+  <p class="note">Linux: make the .AppImage executable (right-click, Properties, or <span style="white-space:nowrap">chmod +x</span>) and open it.</p>
+  </section>
+
   <footer>Made by <a href="https://5x1.com">5x1</a></footer>
 </main>
 <script>
-  // Android visitors see the Android section first.
-  if (/Android/i.test(navigator.userAgent)) { const apple = document.getElementById('apple'); apple.parentNode.insertBefore(document.getElementById('android'), apple); }
+  // Android visitors see the Android section first, computer visitors the computer one.
+  const apple = document.getElementById('apple');
+  if (/Android/i.test(navigator.userAgent)) apple.parentNode.insertBefore(document.getElementById('android'), apple);
+  else if (!/iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) && navigator.maxTouchPoints < 2) apple.parentNode.insertBefore(document.getElementById('computer'), apple);
+  // BEetle's files are GitHub release assets (too big for this site): follow its newest release.
+  fetch('https://api.github.com/repos/Jibo-Revival-Group/BEetle/releases/latest').then(r => r.json()).then(release => {
+    const v = (release.tag_name || '').replace(/^v/, ''), find = re => (release.assets || []).find(a => re.test(a.name));
+    [['beetle-win', /windows-portable\.exe$/, 'Windows (portable .exe)'], ['beetle-mac', /mac.*\.zip$/, 'Mac (.app)'], ['beetle-linux', /\.AppImage$/, 'Linux (.AppImage)']].forEach(([id, re, label]) => {
+      const asset = find(re), a = document.getElementById(id);
+      if (asset && v) { a.href = asset.browser_download_url; a.textContent = 'Download BEetle ' + v + ' for ' + label; }
+    });
+  }).catch(() => {});
   // Point the download buttons at the newest builds.
   fetch('source.json').then(r => r.json()).then(source => {
     const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
