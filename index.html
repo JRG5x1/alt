@@ -50,7 +50,7 @@
     <img src="images/revive-a-maker-icon.png" alt="">
     <div>
       <h3>Revive-A-Maker</h3>
-      <p>Be a Maker, revived: program Jibo with Scratch. Best on a tablet.</p>
+      <p>Be a Maker, revived: program Jibo with Scratch. Best on a tablet or computer.</p>
     </div>
   </div>
 
@@ -80,8 +80,11 @@
   <a class="button" id="beetle-win" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-windows-portable.exe">Download BEep 2.1.0 for Windows (portable .exe)</a>
   <a class="button secondary" id="beetle-mac" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-mac-universal.zip">Download BEep 2.1.0 for Mac (.app)</a>
   <a class="button secondary" id="beetle-linux" href="https://github.com/Jibo-Revival-Group/BEetle/releases/download/v2.1.0/BEep-2.1.0-linux-x86_64.AppImage">Download BEep 2.1.0 for Linux (.AppImage)</a>
+  <a class="button secondary" id="ram-win" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-windows-portable.exe">Download Revive-A-Maker 1.1.0 for Windows (portable .exe)</a>
+  <a class="button secondary" id="ram-mac" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-mac-universal.zip">Download Revive-A-Maker 1.1.0 for Mac (.app)</a>
+  <a class="button secondary" id="ram-linux" href="https://github.com/Jibo-Revival-Group/Revive-A-Maker/releases/download/v1.1.0/Revive-A-Maker-1.1.0-linux-x86_64.AppImage">Download Revive-A-Maker 1.1.0 for Linux (.AppImage)</a>
   <p class="note">Windows: no install needed, just open the .exe. If SmartScreen warns, choose More info, then Run anyway.</p>
-  <p class="note">Mac (Intel and Apple Silicon): unzip, move BEep to Applications, then right-click it and choose Open the first time.</p>
+  <p class="note">Mac (Intel and Apple Silicon): unzip, move the app to Applications, then right-click it and choose Open the first time.</p>
   <p class="note">Linux: make the .AppImage executable (right-click, Properties, or <span style="white-space:nowrap">chmod +x</span>) and open it.</p>
   </section>
 
@@ -92,14 +95,16 @@
   const apple = document.getElementById('apple');
   if (/Android/i.test(navigator.userAgent)) apple.parentNode.insertBefore(document.getElementById('android'), apple);
   else if (!/iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) && navigator.maxTouchPoints < 2) apple.parentNode.insertBefore(document.getElementById('computer'), apple);
-  // The computer builds are GitHub release assets (too big for this site; the repo is still named BEetle): follow the newest release.
-  fetch('https://api.github.com/repos/Jibo-Revival-Group/BEetle/releases/latest').then(r => r.json()).then(release => {
-    const v = (release.tag_name || '').replace(/^v/, ''), find = re => (release.assets || []).find(a => re.test(a.name));
-    [['beetle-win', /windows-portable\.exe$/, 'Windows (portable .exe)'], ['beetle-mac', /mac.*\.zip$/, 'Mac (.app)'], ['beetle-linux', /\.AppImage$/, 'Linux (.AppImage)']].forEach(([id, re, label]) => {
-      const asset = find(re), a = document.getElementById(id);
-      if (asset && v) { a.href = asset.browser_download_url; a.textContent = 'Download BEep ' + v + ' for ' + label; }
-    });
-  }).catch(() => {});
+  // The computer builds are GitHub release assets (too big for this site; BEep's repo is still named BEetle): follow the newest release.
+  [['BEetle', 'beetle', 'BEep'], ['Revive-A-Maker', 'ram', 'Revive-A-Maker']].forEach(([repo, prefix, name]) => {
+    fetch('https://api.github.com/repos/Jibo-Revival-Group/' + repo + '/releases/latest').then(r => r.json()).then(release => {
+      const v = (release.tag_name || '').replace(/^v/, ''), find = re => (release.assets || []).find(a => re.test(a.name));
+      [['-win', /windows-portable\.exe$/, 'Windows (portable .exe)'], ['-mac', /mac.*\.zip$/, 'Mac (.app)'], ['-linux', /\.AppImage$/, 'Linux (.AppImage)']].forEach(([id, re, label]) => {
+        const asset = find(re), a = document.getElementById(prefix + id);
+        if (asset && v) { a.href = asset.browser_download_url; a.textContent = 'Download ' + name + ' ' + v + ' for ' + label; }
+      });
+    }).catch(() => {});
+  });
   // Point the download buttons at the newest builds.
   fetch('source.json').then(r => r.json()).then(source => {
     const app = source.apps.find(a => a.bundleIdentifier === 'com.jiborevival.beep');
